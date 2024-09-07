@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
+
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+
+    <!-- Import Roboto Mono -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+      <header>
+        <nav class="navbar">
+          <a href="index.html" class="logo">MyLogo</a>
+          <!-- Logo -->
+          <ul class="nav-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+          </ul>
+          <a href="contact.html" class="contact-btn">Contact Me</a>
+
+          <!-- Contact Me button -->
+          <div class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+            <!-- Font Awesome Hamburger Icon -->
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <!-- Contact Information -->
+        <section id="contacthero" class="fade-in-section">
+          <div class="contacthero-content">
+            <h1>Let's CONNECT Today.</h1>
+            <p>The one-woman tech team bringing your next big idea to life.</p>
+          </div>
+        </section>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <form action="#" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name :]" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email ;]" required />
+
+            <label for="service">Service</label>
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Select a service</option>
+              <option value="web-development">Web Development</option>
+              <option value="ui-ux-design">UI/UX Design</option>
+              <option value="consultation">Consultation</option>
+              <option value="other">Other</option>
+            </select>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Enter your message :)" required></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </main>
+
+        <!-- Map Section -->
+        <section id="map">
+          <h2>Find Us Here</h2>
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.04520970408!2d103.76643916104199!3d1.3316792999999965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da178ab8a2b7db%3A0x6d1a6c4169dd3496!2sSingapore%20Institute%20of%20Management!5e0!3m2!1sen!2ssg!4v1692039697360!5m2!1sen!2ssg"
+              width="100%"
+              height="450"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </section>
+      </main>
+    
+      <!-- CTA Section -->
+<section id="cta" class="cta-section">
+  <div class="cta-container">
+    <h2>Ready to Bring Your Ideas to Life?</h2>
+    <p>Whether you need help with web development, UI/UX design, or consultation, I'm here to make it happen. Let's work together to bring your vision to reality!</p>
+    <a href="contact.html" class="cta-btn">Get in Touch Now</a>
+  </div>
+</section>
+
+
+   
+    
+       <!-- Footer Section -->
+       <footer>
+        <div class="footer-container">
+          <div class="footer-section about">
+            <h2>Yan Mei</h2>
+            <p>Yan Mei is a professional with expertise in design and development, delivering bespoke solutions to clients worldwide.</p>
+          </div>
+          <div class="footer-section links">
+            <h2>Quick Links</h2>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="portfolio.html">Portfolio Us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+          </div>
+          <div class="footer-section social">
+            <h2>Social Media</h2>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Yan Mei's 2034 Portfolio. All Rights Reserved.</p>
+          <button class="back-to-top">Back to Top</button>
+        </div>
+      </footer>
+  </body>
+</html>

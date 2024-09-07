@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yan Mei's Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Manrope"
+      rel="stylesheet"
+    />
+
+    <!-- Import Roboto Mono -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Include Font Awesome -->
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="logo">MyLogo</a>
+        <!-- Logo -->
+        <ul class="nav-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+        <a href="contact.html" class="contact-btn">Contact Me</a>
+
+        <!-- Contact Me button -->
+        <div class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+          <!-- Font Awesome Hamburger Icon -->
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="hero" class="fade-in-section">
+        <div class="hero-content">
+          <h1>Take a look at my works.</h1>
+          <p>Here are some of the things I've been working on.</p>
+        </div>
+      </section>
+
+      <!-- Featured Works Section -->
+
+      <!-- Featured Works Slider -->
+      <section id="featured-works-slider" class="fade-in-section">
+        <h2 class="section-title">Featured Works</h2>
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slider-item">
+              <img src="assets/fintechMobile.jpg" alt="Project 1" />
+              <div class="slider-info">
+                <h3>Project Title 1</h3>
+                <p>
+                  Designed a sleek web application for managing personal
+                  finances with real-time analytics.
+                </p>
+              </div>
+            </div>
+
+            <div class="slider-item">
+              <img src="assets/project2.jpg" alt="Project 2" />
+              <div class="slider-info">
+                <h3>Project Title 2</h3>
+                <p>
+                  Developed a cloud-based system for a logistics company,
+                  automating shipping processes and improving efficiency.
+                </p>
+              </div>
+            </div>
+
+            <div class="slider-item">
+              <img src="assets/project3.jpg" alt="Project 3" />
+              <div class="slider-info">
+                <h3>Project Title 3</h3>
+                <p>
+                  Created a machine learning-based recommendation system for an
+                  e-commerce platform.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slider Navigation Dots -->
+          <div class="slider-dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+
+          <!-- Slider Arrows -->
+          <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+          <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+      </section>
+
+      <!-- Recent Works Section -->
+      <section id="recent-works" class="fade-in-section">
+        <div class="tabs">
+          <button
+            class="tablink active"
+            onclick="openTab(event, 'web-development')"
+          >
+            Web Development
+          </button>
+          <button class="tablink" onclick="openTab(event, 'uiux-design')">
+            UI/UX Design
+          </button>
+          <button class="tablink" onclick="openTab(event, 'full-stack')">
+            Full Stack
+          </button>
+        </div>
+
+        <!-- Tab Content for Web Development -->
+        <div id="web-development" class="tabcontent" style="display: block">
+          <div class="works-container">
+            <!-- Web Development Projects -->
+            <div class="work-card" onclick="openModal('modal1')">
+              <img
+                src="assets/icon-developer.jpg"
+                alt="Work 1"
+                class="work-image"
+              />
+              <h3>Project Title 1</h3>
+              <p>
+                Developed a responsive e-commerce platform that enhanced user
+                engagement and streamlined the shopping experience.
+              </p>
+              <div class="tags">
+                <span class="tag">Web Development</span>
+                <span class="tag">Full Stack</span>
+                <span class="year">2023</span>
+              </div>
+            </div>
+
+            <div class="work-card" onclick="openModal('modal2')">
+              <img
+                src="assets/icon-developer.jpg"
+                alt="Work 6"
+                class="work-image"
+              />
+              <h3>Project Title 6</h3>
+              <p>
+                Developed a custom CRM system for a logistics company,
+                integrating multiple data streams for improved efficiency.
+              </p>
+              <div class="tags">
+                <span class="tag">Web Development</span>
+                <span class="tag">Full Stack</span>
+                <span class="year">2021</span>
+              </div>
+            </div>
+
+            <!-- Add more web development projects as needed -->
+          </div>
+        </div>
+
+        <!-- Tab Content for UI/UX Design -->
+        <div id="uiux-design" class="tabcontent">
+          <div class="works-container">
+            <!-- UI/UX Design Projects -->
+            <div class="work-card" onclick="openModal('modal3')">
+              <img
+                src="assets/icon-developer.jpg"
+                alt="Work 2"
+                class="work-image"
+              />
+              <h3>Project Title 2</h3>
+              <p>
+                Designed a sleek and intuitive mobile app interface for a
+                leading fintech startup, focusing on user-centric design.
+              </p>
+              <div class="tags">
+                <span class="tag">UI/UX Design</span>
+                <span class="tag">Mobile App</span>
+                <span class="year">2023</span>
+              </div>
+            </div>
+
+            <div class="work-card" onclick="openModal('modal4')">
+              <img
+                src="assets/icon-developer.jpg"
+                alt="Work 4"
+                class="work-image"
+              />
+              <h3>Project Title 4</h3>
+              <p>
+                Redesigned the corporate website for a healthcare company,
+                improving accessibility and conversion rates.
+              </p>
+              <div class="tags">
+                <span class="tag">UI/UX Design</span>
+                <span class="tag">Web Development</span>
+                <span class="year">2022</span>
+              </div>
+            </div>
+
+            <!-- Add more UI/UX design projects as needed -->
+          </div>
+        </div>
+
+        <!-- Tab Content for Full Stack -->
+        <div id="full-stack" class="tabcontent">
+          <div class="works-container">
+            <!-- Full Stack Projects -->
+            <div class="work-card" onclick="openModal('modal5')">
+              <img
+                src="assets/icon-developer.jpg"
+                alt="Work 3"
+                class="work-image"
+              />
+              <h3>Project Title 3</h3>
+              <p>
+                Architected a scalable cloud-based solution for a SaaS company,
+                enabling seamless integration and deployment.
+              </p>
+              <div class="tags">
+                <span class="tag">Full Stack</span>
+                <span class="tag">Cloud</span>
+                <span class="year">2022</span>
+              </div>
+            </div>
+
+            <div class="work-card" onclick="openModal('modal6')">
+              <img
+                src="assets/icon-developer.jpg"
+                alt="Work 5"
+                class="work-image"
+              />
+              <h3>Project Title 5</h3>
+              <p>
+                Implemented a machine learning model to enhance the predictive
+                analytics capabilities for an e-commerce platform.
+              </p>
+              <div class="tags">
+                <span class="tag">Full Stack</span>
+                <span class="tag">AI/ML</span>
+                <span class="year">2021</span>
+              </div>
+            </div>
+
+            <!-- Add more full stack projects as needed -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <h2>Project Title 1</h2>
+        <p>Detailed information about Project Title 1...</p>
+      </div>
+    </div>
+
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <h2>Project Title 6</h2>
+        <p>Detailed information about Project Title 6...</p>
+      </div>
+    </div>
+
+    <div id="modal3" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal3')">&times;</span>
+        <h2>Project Title 2</h2>
+        <p>Detailed information about Project Title 2...</p>
+      </div>
+    </div>
+
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section about">
+          <h2>Yan Mei</h2>
+          <p>Yan Mei is a professional with expertise in design and development, delivering bespoke solutions to clients worldwide.</p>
+        </div>
+        <div class="footer-section links">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+          </ul>
+        </div>
+        <div class="footer-section social">
+          <h2>Social Media</h2>
+          <div class="social-icons">
+            <i class="fa fa-instagram" style="font-size:24px"></i>
+            <i class="fa fa-facebook" style="font-size:24px"></i>
+            <i class="fa fa-youtube-play" style="font-size:24px"></i>
+            <i class="fa fa-github" style="font-size:24px"></i>
+            <i class="fa fa-linkedin" style="font-size:24px"></i>
+
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Yan Mei's 2034 Portfolio. All Rights Reserved.</p>
+        <button class="back-to-top">Back to Top</button>
+      </div>
+    </footer>
+    
+
+    <script>
+      // Function to open modal
+      function openModal(modalId) {
+        document.getElementById(modalId).style.display = "block";
+      }
+
+      // Function to close modal
+      function closeModal(modalId) {
+        document.getElementById(modalId).style.display = "none";
+      }
+    </script>
+  </body>
+</html>

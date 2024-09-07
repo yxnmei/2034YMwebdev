@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yan Mei's Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- Import Font Awesome Css font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Include Font Awesome -->
+    <script src="script.js"></script>
+  </head>
+  <body>
+      <header>
+        <nav class="navbar">
+          <a href="index.html" id="home-link" class="logo">MyLogo</a>
+          <!-- Logo -->
+          <ul class="nav-links">
+            <li><a href="about.html" id="about-link">About</a></li>
+            <li><a href="services.html" id="services-link">Services</a></li>
+            <li><a href="portfolio.html" id="portfolio-link">Portfolio</a></li>
+          </ul>
+          <a href="contact.html" id="contact-link" class="contact-btn">Contact Me</a>
+        
+          <!-- Contact Me button -->
+          <div class="hamburger" id="hamburger">
+            <i class="fa fa-bars" style="font-size:24px"></i>
+            <!-- Font Awesome Hamburger Icon -->
+          </div>
+        </nav>
+        
+      </header>
+
+      <main>
+        <!-- Hero Section -->
+        <section id="hero" class="fade-in-section">
+          
+            <div class="hero-content">
+              <h1>
+                <div id="typed-strings">
+                  <p>Designer X Software Developer.</p>
+                  <p>UX Enthusiast & Full Stack Developer.</p>
+                  <p>Tech Mentor for Ladies.</p>
+                  
+                </div>
+                <span id="typed"></span>
+              </h1>
+              <p>
+                I help people and brands reach their goals by designing & building user-centric digital products and interactive experiences. I also talk to women.
+              </p>
+
+            <!-- Animation -->
+
+            <div class="lottie-animation">
+              <script
+                src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                type="module"
+              ></script>
+              <dotlottie-player
+                src="https://lottie.host/9ce6c6b4-b27e-4a79-9d5b-e3692c1a2054/DYYYNI5Sif.json"
+                background="transparent"
+                speed="1"
+                style="width: 300px; height: 300px"
+                loop
+                autoplay
+              ></dotlottie-player>
+            </div>
+            <div class="indexButton">
+            <button class="about-btn">View my Services</button>
+            <button>About me</button>
+
+            </div>
+            
+          </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="fade-in-section">
+          <div class="about-content">
+            <h2>Hi, I am Yan Mei. Nice to meet you!</h2>
+            <p>
+              Since beginning my journey as a freelance designer 12 years ago,
+              I've done remote work for agencies, consulted for startups, and
+              collaborated with talented people to create digital products for
+              both business and consumer use. I'm quietly confident, naturally
+              curious, and perpetually working on improving my chops.
+            </p>
+            <a href="contact.html" class="about-btn">Let's work together</a>
+          </div>
+        </section>
+
+        <!-- Expertise Section -->
+        <section id="expertise" class="fade-in-section">
+          <div class="expertise-header">
+            <h2>Expertise & Services</h2>
+            <p>Discover How We Can Create Something Extraordinary Together!</p>
+          </div>
+         
+          <div class="expertise-container">
+            <!-- Left Card -->
+            <div class="expertise-card large-card">
+              <img
+                src="assets/uiuxdesign.jpg"
+                alt="uiux-design Icon"
+                class="expertise-icon"
+              />
+              <h3>UI/UX Design.</h3>
+              <p>
+              Sketch, wireframe, prototype and test
+                user-centered interfaces, focusing on
+                content structure, intuitive UI patterns
+                and simple interactions - keeping in mind
+                that simplicity is the utimate sophistication.
+                To design websites & applications that
+                best meet users' and clients' needs,
+                I apply all my professional experience into
+                user research, information architecture,
+                usability, graphics design, interaction
+                design and user testing.
+                
+                My favorite tools are Photoshop, Axure,
+                Basamiq and, of course, pen & paper.
+              </p>
+              <a href="services.html" class="contact-btn">Learn More</a>
+            </div>
+
+            <!-- Right Cards Stack -->
+            <div class="right-column">
+              <div class="expertise-card small-card">
+                <img
+                  src="assets/fullstack.jpg"
+                  alt="full-stack Icon"
+                  class="expertise-icon"
+                />
+
+                <h3>Full Stack Development.</h3>
+                <p>
+                  I like to code things from scratch, and enjoy bringing ideas
+                  to life in the browser.
+                </p>
+                <a href="services.html" class="contact-btn">Learn More</a>
+              </div>
+
+              <div class="expertise-card small-card">
+                <img
+                  src="assets/techMentor.jpg"
+                  alt="Designer Icon"
+                  class="expertise-icon"
+                />
+                <h3>Tech Mentoring.</h3>
+                <p>
+                  I am passionate about empowering the next generation of female
+                  leaders in technology. I love inspiring young girls to explore
+                  their creativity, develop their coding skills, and build
+                  confidence in tech.
+                </p>
+                <a href="services.html" class="contact-btn">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Recent Works Section -->
+        <section id="recent-works" class="fade-in-section">
+          <h2>Recent Works</h2>
+          <div class="tabs">
+            <button
+              class="tablink active"
+              onclick="openTab(event, 'web-development')"
+            >
+              Web Development
+            </button>
+            <button class="tablink" onclick="openTab(event, 'uiux-design')">
+              UI/UX Design
+            </button>
+            <button class="tablink" onclick="openTab(event, 'full-stack')">
+              Full Stack
+            </button>
+          </div>
+
+          <!-- Tab Content for Web Development -->
+          <div id="web-development" class="tabcontent" style="display: block">
+            <div class="works-container">
+              <!-- Web Development Projects -->
+              <div class="work-card">
+                <img
+                  src="assets/icon-developer.jpg"
+                  alt="Work 1"
+                  class="work-image"
+                />
+                <h3>Responsive E commerce platform</h3>
+                <p>
+                  Developed a responsive e-commerce platform that enhanced user
+                  engagement and streamlined the shopping experience.
+                </p>
+                <div class="tags">
+                  <span class="tag">Web Development</span>
+                  <span class="tag">Full Stack</span>
+                  <span class="year">2023</span>
+                </div>
+              </div>
+
+              <div class="work-card">
+                <img
+                  src="assets/crmProj.jpg"
+                  alt="Work 6"
+                  class="work-image"
+                />
+                <h3>CRM system</h3>
+                <p>
+                  Developed a custom CRM system for a logistics company,
+                  integrating multiple data streams for improved efficiency.
+                </p>
+                <div class="tags">
+                  <span class="tag">Web Development</span>
+                  <span class="tag">Full Stack</span>
+                  <span class="year">2021</span>
+                </div>
+              </div>
+
+              <div class="work-card">
+                <img
+                  src="assets/icon-developer.jpg"
+                  alt="Work 1"
+                  class="work-image"
+                />
+                <h3>Responsive E commerce platform</h3>
+                <p>
+                  Developed a responsive e-commerce platform that enhanced user
+                  engagement and streamlined the shopping experience.
+                </p>
+                <div class="tags">
+                  <span class="tag">Web Development</span>
+                  <span class="tag">Full Stack</span>
+                  <span class="year">2023</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab Content for UI/UX Design -->
+          <div id="uiux-design" class="tabcontent">
+            <div class="works-container">
+              <!-- UI/UX Design Projects -->
+              <div class="work-card">
+                <img src="assets/fintechMobile.jpg" alt="Work 2" class="work-image" />
+                <h3>FiNtechisCrzy</h3>
+                <p>
+                  Designed a sleek and intuitive mobile app interface for a
+                  leading fintech startup, focusing on user-centric design.
+                </p>
+                
+                <div class="tags">
+                  <span class="tag">UI/UX Design</span>
+                  <span class="tag">Mobile App</span>
+                  <span class="year">2023</span>
+                </div>
+              </div>
+
+              <div class="work-card">
+                <img src="assets/healthcarewebsite.jpg" alt="Work 4" class="work-image" />
+                <h3>HealthbyYou</h3>
+                <p>
+                  Redesigned the corporate website for a healthcare company,
+                  improving accessibility and conversion rates.
+                </p>
+                <div class="tags">
+                  <span class="tag">UI/UX Design</span>
+                  <span class="tag">Web Development</span>
+                  <span class="year">2022</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab Content for Full Stack -->
+          <div id="full-stack" class="tabcontent">
+            <div class="works-container">
+              <!-- Full Stack Projects -->
+              <div class="work-card">
+                <img src="assets/saas.jpg" alt="Work 3" class="work-image" />
+                <h3>Cloud Architecture</h3>
+                <p>
+                  Architected a scalable cloud-based solution for a SaaS
+                  company, enabling seamless integration and deployment.
+                </p>
+                <div class="tags">
+                  <span class="tag">Full Stack</span>
+                  <span class="tag">Cloud</span>
+                  <span class="year">2022</span>
+                </div>
+              </div>
+
+              <div class="work-card">
+                <img src="assets/MLmodel.jpg" alt="Work 5" class="work-image" />
+                <h3>Machine Learning Model</h3>
+                <p>
+                  Implemented a machine learning model to enhance the predictive
+                  analytics capabilities for an e-commerce platform.
+                </p>
+                <div class="tags">
+                  <span class="tag">Full Stack</span>
+                  <span class="tag">AI/ML</span>
+                  <span class="year">2021</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="view-more-container">
+            <a href="portfolio.html" class="view-more-btn">View More</a>
+          </div>
+        </section>
+
+        <section id="testimonials" class="fade-in-section">
+            <h2>What Clients Say</h2>
+            <div class="testimonials-wrapper">
+              <!-- Left Column: Testimonials -->
+              <div class="testimonial-column">
+                <div class="testimonial-card active">
+                  <img src="assets/profile.jpg" alt="Client Photo" class="client-photo"/>
+                  <h3>John Doe</h3>
+                  <span>CEO, Tech Innovators</span>
+                  <p>
+                    "Yan Mei transformed our vision into reality with exceptional
+                    design and attention to detail. Our website now truly
+                    represents our brand."
+                  </p>
+                  <!-- Pagination Dots Inside Testimonial Card -->
+                  <div class="pagination-dots">
+                    <span class="dot active" onclick="showTestimonial(0)"></span>
+                    <span class="dot" onclick="showTestimonial(1)"></span>
+                    <span class="dot" onclick="showTestimonial(2)"></span>
+                  </div>
+                </div>
+          
+                <div class="testimonial-card">
+                  <img
+                    src="assets/profile.jpg"
+                    alt="Client Photo"
+                    class="client-photo"
+                  />
+                  <h3>Jane Smith</h3>
+                  <span>Product Manager, Fintech Solutions</span>
+                  <p>
+                    "Working with Yan Mei was a game-changer. Her UI/UX expertise
+                    made our app intuitive and user-friendly, which our users
+                    love."
+                  </p>
+                  <!-- Pagination Dots Inside Testimonial Card -->
+                  <div class="pagination-dots">
+                    <span class="dot" onclick="showTestimonial(0)"></span>
+                    <span class="dot active" onclick="showTestimonial(1)"></span>
+                    <span class="dot" onclick="showTestimonial(2)"></span>
+                  </div>
+                </div>
+          
+                <div class="testimonial-card">
+                  <img
+                    src="assets/profile.jpg"
+                    alt="Client Photo"
+                    class="client-photo"
+                  />
+                  <h3>Michael Brown</h3>
+                  <span>COO, Logistics Experts</span>
+                  <p>
+                    "The CRM system Yan Mei developed for us has streamlined our
+                    operations and significantly improved our efficiency. We
+                    couldn't be happier!"
+                  </p>
+                  <!-- Pagination Dots Inside Testimonial Card -->
+                  <div class="pagination-dots">
+                    <span class="dot" onclick="showTestimonial(0)"></span>
+                    <span class="dot" onclick="showTestimonial(1)"></span>
+                    <span class="dot active" onclick="showTestimonial(2)"></span>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Right Column: Logos -->
+              <div class="logo-column">
+                <p>
+                  Employees from these organizations highly recommend my services:
+                </p>
+                <div class="logos-grid">
+                  <img src="assets/logo-placeholder.png" alt="Company Logo" />
+                  <img src="assets/logo-placeholder.png" alt="Company Logo" />
+                  <img src="assets/logo3.png" alt="Company Logo" />
+                  <img src="assets/logo4.png" alt="Company Logo" />
+                  <img src="assets/logo5.png" alt="Company Logo" />
+                  <img src="assets/logo6.png" alt="Company Logo" />
+                  <!-- Add more logos as needed -->
+                </div>
+              </div>
+            </div>
+          </section>
+          
+        </div>
+      </main>
+    <!-- Footer Section -->
+<!-- Footer Section -->
+<footer>
+  <div class="footer-container">
+    <div class="footer-section about">
+      <h2>Yan Mei</h2>
+      <p>Yan Mei is a professional with expertise in design and development, delivering bespoke solutions to clients worldwide.</p>
+    </div>
+
+    <div class="footer-section links">
+      <h2>Quick Links</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section social">
+      <h2>Social Media</h2>
+      <div class="social-icons">
+        <a href="https://instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="https://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="https://youtube.com" target="_blank"><i class="fa fa-youtube-play"></i></a>
+        <a href="https://github.com" target="_blank"><i class="fa fa-github"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2024 Yan Mei's Portfolio. All Rights Reserved.</p>
+    <button class="back-to-top">Back to Top</button>
+  </div>
+</footer>
+
+    
+  </body>
+</html>
